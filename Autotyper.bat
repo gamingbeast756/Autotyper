@@ -1,4 +1,3 @@
-ADD DOWNLOAD UPDATE
 @if (@CodeSection == @Batch) @then
 @echo off
 set SendKeys=CScript //nologo //E:JScript "%~F0"
