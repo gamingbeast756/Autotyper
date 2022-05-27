@@ -105,7 +105,7 @@ mode con:cols=150 lines=30
 FOR /F "Tokens=* USEBACKQ" %%F IN (`curl https://raw.githubusercontent.com/gamingbeast756/Autotyper/main/Autotyper.bat -L`) DO (
 SET availvers=%%F
 )
-@echo available version is %availvers%
+@echo Available version is %availvers%
 FOR /F "Tokens=* USEBACKQ" %%B IN (`findstr "v1.6 v.1.7 v1.8 v1.9 v2 v2.1 v2.2 v2.3 v2.4 v2.5 v2.6" "%CD%\Autotyper.bat"`) DO ( 
 SET currentvers=%%B
 )
@@ -128,6 +128,7 @@ choice /c 123 /n
 if %errorlevel%==1 goto setup
 if %errorlevel%==2 Start https://github.com/gamingbeast756/Autotyper
 if %errorlevel%==3 curl https://raw.githubusercontent.com/gamingbeast756/Autotyper/main/Autotyper.bat -L -o Autotyper.bat
+exit
 
 :Autotyper
 mode con:cols=90 lines=20
