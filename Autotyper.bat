@@ -78,7 +78,7 @@ cls
 @echo INSERT, ESC, CAPSLOCK, BACKSPACE.
 @echo you can also type (command/onenumber/oneletter) (number)
 @echo to signify pressing that key a number of times.
-@echo for example if you set the command to "BACKSPACE 5"
+@echo for example if you set the command to "LEFT 5"
 @echo it would be like pressing left arrow 5 times
 pause
 goto setup
